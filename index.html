@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form class="search-area">
+        <select id="content">
+            <option value="people"/>People</option>
+            <option value="planets"/>Planets</option>
+            <option value="films"/>Films</option>
+            <option value="species"/>Species</option>
+            <option value="vehicles"/>Vehicles</option>
+            <option value="starships"/>Starships</option>
+        </select>
+        <input id="search" type="text" onkeydown="return (event.keyCode != 13);" value="Obi-Wan">
+        <button type="button" id="button">Search</button>
+    </form>
+    <div class="content"></div>
+</body>
+</html>
